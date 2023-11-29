@@ -1,0 +1,18 @@
+.Navbar {
+    padding: 24px 0;
+}
+
+.links {
+    padding: 0 125px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.links a {
+    text-decoration: none;
+    color: #232323;
+    font-family: GilroyMedium, sans-serif;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+}

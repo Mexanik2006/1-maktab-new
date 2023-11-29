@@ -1,0 +1,16 @@
+.About {
+    padding: 0 125px;
+    font-family: GilroyLight, sans-serif;
+}
+
+.About_title {
+    text-align: center;
+    margin: 30px 0;
+    font-style: italic;
+}
+
+.About_flex {
+    /* border: 1px solid red; */
+    display: flex;
+    height: 300px;
+}
