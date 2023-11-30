@@ -13,4 +13,13 @@
     /* border: 1px solid red; */
     display: flex;
     height: 300px;
+    width: 100%;
+}
+
+.About_left {
+    width: 50%;
+}
+
+.About_right {
+    width: 50%;
 }

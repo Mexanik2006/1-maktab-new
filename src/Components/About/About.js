@@ -1,5 +1,6 @@
 import React from 'react';
 import "./About.css"
+import About_swiper from "./About_swiper/About_swiper"
 
 function About() {
     return (
@@ -9,7 +10,7 @@ function About() {
             </div>
             <div className="About_flex">
                 <div className="About_left"></div>
-                <div className="About_right"></div>
+                <div className="About_right"><About_swiper /></div>
             </div>
         </div>
     )
