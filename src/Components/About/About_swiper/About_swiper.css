@@ -24,14 +24,17 @@ body {
 }
 
 .swiper-slide {
-    text-align: center;
+    /* text-align: center;
     font-size: 18px;
-    background: #fff;
+    background: #fff; */
 
     /* Center slide text vertically */
-    display: flex;
+    /* display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: center; */
+    /*sdsd*/
+    background-position: center;
+    background-size: cover;
 }
 
 .swiper-slide img {
