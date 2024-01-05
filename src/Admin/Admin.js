@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import "./Admin.css"
 import axios from "../Api/Api"
+import UploadImage from '../firebase/UploadImage';
 
 function Admin() {
     const [name, setName] = useState("");
@@ -82,6 +83,10 @@ function Admin() {
                     <input type="text" placeholder='Speaking' onChange={(e) => setSpeaking(e.target.value)} />
                     <button>nnn</button>
                 </form>
+            </div>
+
+            <div className="UploadImage">
+                <UploadImage />
             </div>
         </div>
     )

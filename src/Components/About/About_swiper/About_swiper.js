@@ -1,4 +1,4 @@
-import React, { useRef } from 'react';
+import React, { useEffect, useRef, useState } from 'react';
 // Import Swiper React components
 import { Swiper, SwiperSlide } from 'swiper/react';
 
@@ -22,6 +22,9 @@ import school6 from "../../../Images/6.jpg"
 import school7 from "../../../Images/7.jpg"
 import school8 from "../../../Images/8.jpg"
 import school9 from "../../../Images/9.jpg"
+import DownloadImage from "../../../firebase/DownloadImage"
+import { getDownloadURL, listAll, ref } from 'firebase/storage';
+import { imageDb } from '../../../firebase/Config';
 
 export default function App() {
     const progressCircle = useRef(null);
@@ -30,6 +33,18 @@ export default function App() {
         progressCircle.current.style.setProperty('--progress', 1 - progress);
         progressContent.current.textContent = `${Math.ceil(time / 1000)}s`;
     };
+
+    const [imgUrl, setImgUrl] = useState([])
+    useEffect(() => {
+        listAll(ref(imageDb, "files")).then(imgs => {
+            console.log(imgs)
+            imgs.items.forEach(val => {
+                getDownloadURL(val).then(url => {
+                    setImgUrl(data => [...data, url])
+                })
+            })
+        })
+    }, [])
     return (
         <>
             <Swiper
@@ -52,15 +67,19 @@ export default function App() {
                 // onAutoplayTimeLeft={onAutoplayTimeLeft}
                 className="mySwiper"
             >
-                <SwiperSlide><img src={school1} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={school2} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={school3} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={school4} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={school5} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={school6} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={school7} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={school8} alt="" /></SwiperSlide>
-                <SwiperSlide><img src={school9} alt="" /></SwiperSlide>
+
+
+
+                <div>
+                    {
+                        imgUrl.map(dataVal => <div>
+                            <SwiperSlide>
+                                <img src={dataVal} />
+                            </SwiperSlide>
+                        </div>)
+                    }
+                </div>
+
 
                 <div className="Autoplay-progress" slot="container-end">
                     <svg viewBox="0 0 48 48" ref={progressCircle}>

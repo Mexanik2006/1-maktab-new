@@ -70,7 +70,6 @@ export default function App() {
                                 </div>
                             </div>
                             <Outlet />
-
                         </SwiperSlide>
                     ))
                 }
