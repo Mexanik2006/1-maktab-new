@@ -11,14 +11,14 @@ import UploadImage from './firebase/UploadImage'
 function App() {
   return (
     <div>
-      {/* <TopNavbar />
+      <TopNavbar />
       <Navbar />
       <About />
       <Score />
       <Teachers />
       <News />
-      <Footer /> */}
-      <UploadImage />
+      <Footer />
+      {/* <UploadImage /> */}
     </div>
   )
 }
