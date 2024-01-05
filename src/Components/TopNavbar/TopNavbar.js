@@ -17,7 +17,7 @@ function TopNavbar() {
 
 
             <div className="login_btn">
-                <a href="/login">
+                <a href="/admin">
                     <div className="login_icon">
                         <AiOutlineLogin />
                     </div>
