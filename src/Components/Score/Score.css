@@ -13,14 +13,14 @@
 
 .Score_open {
     display: flex;
-    height: 600px;
+    height: 500px;
     width: 100%;
     /* border: 1px solid red; */
 }
 
 .Score_left {
     padding: 8px;
-    width: 250px;
+    width: 300px;
     background: rgb(245, 245, 245);
     border-radius: 24px;
     font-weight: 600;
@@ -28,6 +28,11 @@
     line-height: 20px;
     text-align: center;
     color: rgb(189, 189, 189);
+    display: block;
+    /* border: 1px solid red; */
+    overflow-y: scroll;
+    /* overflow: ; */
+    /* overflow-block: ; */
 }
 
 .Score_right {
@@ -50,5 +55,5 @@
 
 .sertificate:hover h3 {
     /* border: 1px solid red; */
-    transform: translate(30px);
+    transform: translate(20px);
 }

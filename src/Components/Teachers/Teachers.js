@@ -6,6 +6,7 @@ function Teachers() {
             <div className="Teachers_title">
                 <h1>Ustozlarimmiz</h1>
             </div>
+            <div className="Teachers_bottom"></div>
         </div>
     )
 }

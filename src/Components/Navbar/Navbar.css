@@ -16,3 +16,19 @@
     font-size: 16px;
     line-height: 20px;
 }
+
+.menu_btn {
+    display: none;
+}
+
+@media (max-width:400px) {
+    .links {
+        display: flex;
+        flex-direction: row;
+        display: none;
+    }
+
+    .menu_btn {
+        display: block;
+    }
+}

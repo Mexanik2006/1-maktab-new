@@ -6,17 +6,19 @@ import About from './Components/About/About'
 import Score from './Components/Score/Score'
 import News from './Components/News/News'
 import Teachers from './Components/Teachers/Teachers'
+import UploadImage from './firebase/UploadImage'
 
 function App() {
   return (
     <div>
-      <TopNavbar />
+      {/* <TopNavbar />
       <Navbar />
       <About />
       <Score />
       <Teachers />
       <News />
-      <Footer />
+      <Footer /> */}
+      <UploadImage />
     </div>
   )
 }

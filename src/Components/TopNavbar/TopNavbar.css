@@ -5,8 +5,14 @@
     padding: 0 125px;
     display: flex;
     align-items: center;
+    justify-content: space-between;
     background: rgb(255, 255, 255);
     box-shadow: rgba(0, 0, 0, 0.08) 0px 1px 15px;
+}
+
+.header_call {
+    display: flex;
+    align-items: center;
 }
 
 .logotip img {
@@ -24,4 +30,47 @@
 
 .phone span {
     font-weight: 700;
+}
+
+.login_btn {
+    border: 2px solid blue;
+    height: 80%;
+    width: 70px;
+    display: flex;
+    /* flex-direction: row; */
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    font-weight: 600;
+    color: black;
+}
+
+/* .login_btn a:focus {
+    border: 2px solid green;
+    width: 70px;
+    height: 80%;
+} */
+
+.login_btn a {
+    color: rgb(69, 69, 69);
+}
+
+.login_btn a:hover .login_icon {
+    color: aqua;
+}
+
+.login_icon {
+    font-size: 36px;
+}
+
+
+@media (max-width: 400px) {
+    /* .Header {
+        background: #000;
+        width: 390px;
+    } */
+
+    .login_btn {
+        display: none;
+    }
 }

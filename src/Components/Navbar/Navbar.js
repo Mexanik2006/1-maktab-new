@@ -11,6 +11,10 @@ function Navbar() {
                 <a href="a">Ustozlarimmiz</a>
                 <a href="a">Biz bilan bog'lanish</a>
             </div>
+
+            <div className="menu_btn">
+                <button>sss</button>
+            </div>
         </div>
     )
 }

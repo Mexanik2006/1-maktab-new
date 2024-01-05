@@ -94,7 +94,7 @@
 }
 
 .footer_link a:hover {
-    color: yellow;
+    color: orangered;
 }
 
 .Footer_bottom p {
@@ -103,4 +103,10 @@
     font-family: GilroyLight, sans-serif;
     color: #454545;
 
+}
+
+@media (max-width:400px) {
+    .Footer {
+        display: none;
+    }
 }
