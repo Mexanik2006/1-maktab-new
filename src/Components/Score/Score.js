@@ -40,6 +40,40 @@ function Score() {
                         <h3>CHEMPIONLAR</h3>
                     </div>
                 </div>
+
+                <div className="Score_left_media">
+                    <select name="" id="">
+                        <option value="">
+                            <div className="sertificate">
+                                <h3>
+                                    <Link to={"/Score/Ielts"}>IELTS</Link>
+                                </h3>
+                            </div>
+                        </option>
+                        <option value="">
+                            <div className="sertificate">
+                                <h3>
+                                    <Link to={"/Score1/Dtm"}>DTM</Link>
+                                </h3>
+                            </div>
+                        </option>
+                        <option value="">
+                            <div className="sertificate">
+                                <h3>CEFR</h3>
+                            </div>
+                        </option>
+                        <option value="">
+                            <div className="sertificate">
+                                <h3>OLIY TA'LIM</h3>
+                            </div>
+                        </option>
+                        <option value="">
+                            <div className="sertificate">
+                                <h3>CHEMPIONLAR</h3>
+                            </div>
+                        </option>
+                    </select>
+                </div>
                 <div className="Score_right">
                     <Score_swiper />
                 </div>

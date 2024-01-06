@@ -21,14 +21,27 @@
     display: none;
 }
 
-@media (max-width:400px) {
-    .links {
-        display: flex;
-        flex-direction: row;
-        display: none;
+@media (max-width: 391px) {
+    .Navbar {
+        padding: 5px 25px;
     }
 
-    .menu_btn {
-        display: block;
+    .links {
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        width: 100%;
+        /* border: 1px solid red; */
+        /* display: none; */
     }
+
+    .links a {
+        padding: 7px 5px;
+        /* border: 1px solid red; */
+
+    }
+
+    /* .menu_btn {
+        display: block;
+    } */
 }

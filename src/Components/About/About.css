@@ -24,30 +24,28 @@
     width: 50%;
 }
 
+/* .About_flex {
+    display: block;
+} */
+
 .About_flex_media {
     display: none;
 }
 
-@media (max-width:400px) {
+@media (max-width: 391px) {
     .About {
-        padding: 0 20px;
+        padding: 0 25px;
     }
 
     .About_flex {
         display: none;
-        /* height: 100%; */
     }
 
-    .About_flex_media {
-        display: block;
+    .About_right_media {
+        display: inline-block;
     }
 
-    .About_left {
-        width: 100%;
-    }
-
-    .About_right {
-        width: 100%;
-        display: block;
+    .About_left_media {
+        margin-top: -320px;
     }
 }

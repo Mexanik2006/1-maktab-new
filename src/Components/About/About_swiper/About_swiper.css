@@ -43,3 +43,24 @@ body {
     height: 100%;
     object-fit: cover;
 }
+
+@media (max-width: 391px) {
+    .media_height {
+        /* border: 1px solid red; */
+    }
+
+    .media_img_swiper {
+        /* border: 1px solid red; */
+    }
+
+    .circle {
+        display: none;
+        /* border: 1px solid red; */
+        height: 0;
+    }
+
+    .mySwiper {
+        /* border: 1px solid red; */
+        height: 80px;
+    }
+}

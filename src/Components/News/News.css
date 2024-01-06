@@ -14,3 +14,14 @@
     border: 1px solid red;
     height: 500px;
 }
+
+@media(max-width: 391px) {
+    .News {
+        padding: 0 25px;
+        margin: 0;
+    }
+
+    .News_bottom {
+        display: none;
+    }
+}

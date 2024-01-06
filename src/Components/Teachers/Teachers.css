@@ -14,3 +14,17 @@
     border: 1px solid red;
     height: 500px;
 }
+
+@media(max-width: 391px) {
+    .Teachers {
+        padding: 0 25px;
+    }
+
+    .Teachers_title {
+        margin: 0;
+    }
+
+    .Teachers_bottom {
+        display: none;
+    }
+}

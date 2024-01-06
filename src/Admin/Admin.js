@@ -22,7 +22,7 @@ function Admin() {
         await axios.post("/about/create", newComment)
             .then(res => {
                 // setIsLoading(false)
-                console.log("Muvafaqqiyatli joylandi")
+                window.alert("Muvafaqqiyatli joylandi")
             }
 
             )

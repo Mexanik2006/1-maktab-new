@@ -34,8 +34,17 @@ function About() {
             </div>
 
             <div className="About_flex_media">
-                <div className="About_left_media"></div>
                 <div className="About_right_media"><About_swiper /></div>
+
+                <div className="About_left_media">
+                    {
+                        about.map((about, index) => (
+                            <div className="" key={index}>
+                                <span>{about.name}</span>
+                            </div>
+                        ))
+                    }
+                </div>
             </div>
         </div>
     )
